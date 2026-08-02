@@ -1,7 +1,7 @@
-#Vending Machine
-I have made a vending Machine program in python
+# Vending Machine
+I have made a vending Machine program in Python
 Planned features
 - menu
 - restock
-- stock file that hold the inventory
+- stock file that holds the inventory
 - item class
