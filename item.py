@@ -11,4 +11,7 @@ class item:
         self.quantity += q
 
     def sold(self, s = 1):
-        self.quantity -= s
+        if(self.quantity > 0):
+            self.quantity -= s
+        else:
+            print(f"{self.name} sold out" )
