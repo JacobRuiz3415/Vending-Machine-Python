@@ -5,7 +5,10 @@ from Stack import Stack
 print("Hello User")
 
 historyStack = Stack()
+itemList = []
 
+def selectItem():
+    pass
 
 def displayOptions():
     pass
@@ -15,13 +18,22 @@ def buyingItem(product):
     historyStack.push(f'{product.getName()} was sold for {product.getPrice()}')
 
 def buyStock(product, n):
-    pass
+    product.restock(n)
+    historyStack.push(f'{product.getName()} was restock by {n}')
 
-I1 = item.item("soda", 3.44, 4)
-print(I1.show())
-I1.sold()
-print(I1.show())
+def readItemListFile():
+    f = open("itemList", "r")
+    lines = f.readlines()
 
+    print(lines)
+
+
+I1 = item("soda", 3.44, 4)
+print(I1.show())
+# I1.sold()
+buyingItem(I1)
+print(I1.show())
+print(historyStack.pop())
 #testing output to a file
 f = open("history", "w")
 f.write(I1.show())

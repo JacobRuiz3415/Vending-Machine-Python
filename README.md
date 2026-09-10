@@ -2,7 +2,7 @@
 I have made a vending Machine program in Python
 ## Planned features
 - menu for options
-- restock and sell function
+- restock and sell functions
 - stock file that holds the inventory
 - item class
 - plans to use a stack to record and output vending history. It outputs each transaction as each item in the stack pops.
