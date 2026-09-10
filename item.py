@@ -16,3 +16,12 @@ class item:
             
         else:
             print(f"{self.name} sold out" )
+
+    def getName(self):
+        return self.name
+
+    def getStock(self):
+        return self.quantity
+
+    def getPrice(self):
+        return self.price
