@@ -10,6 +10,10 @@ itemList = []
 def selectItem():
     pass
 
+def displayItems():
+    for i in itemList:
+        print(f"{i.getName()}************ {i.getPrice()}")
+
 def displayOptions():
     pass
 
@@ -35,7 +39,8 @@ def readItemListFile():
     print("Done")
 
 def outputHistory():
-    pass
+    f = open("history", "w")
+    f.write(I1.show())
 
 I1 = item("soda", 3.44, 4)
 print(I1.show())
