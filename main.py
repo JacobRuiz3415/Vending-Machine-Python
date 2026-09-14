@@ -22,11 +22,20 @@ def buyStock(product, n):
     historyStack.push(f'{product.getName()} was restock by {n}')
 
 def readItemListFile():
+    print("readfile...")
     f = open("itemList", "r")
     lines = f.readlines()
-
+    f.close()
     print(lines)
 
+    for x in lines:
+        line = x.split(",")
+        itemList.append(item(line[0],line[1],line[2]))
+
+    print("Done")
+
+def outputHistory():
+    pass
 
 I1 = item("soda", 3.44, 4)
 print(I1.show())
